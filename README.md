@@ -24,6 +24,24 @@ The dashboard will run at http://localhost:5173/
 
 ---
 
+
+## Admin Signup Endpoint
+
+To create an admin user:
+
+```bash
+curl --location 'https://fynd-ecommerce-backend.onrender.com/api/auth/signup' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+           "email": "adminemail@gmail.com",
+           "username": "AdminUsername",
+           "password": "12345678",
+           "name": "Admin Name"
+}'
+```
+
+---
+
 ## Page Overview
 
 ### Login Page (`src/pages/Login.jsx`)
