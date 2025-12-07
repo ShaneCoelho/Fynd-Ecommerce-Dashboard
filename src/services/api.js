@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { cookieService } from './cookies';
 
-const API_BASE_URL = 'http://localhost:4000';
+const API_BASE_URL = 'https://fynd-ecommerce-backend.onrender.com';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
