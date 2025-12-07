@@ -34,7 +34,7 @@ export default function Login() {
       if (response.success && response.token) {
         cookieService.setToken(response.token, true);
         toast.success('Login successful!');
-        navigate('/dashboard');
+        navigate('/');
       } else {
         toast.error('Login failed. Please try again.');
       }
